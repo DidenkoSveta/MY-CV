@@ -30,15 +30,23 @@ a
 	letter-spacing: 0.05em
 	text-decoration: none
 	white-space: nowrap
+a:hover
+	color: $blue
+	cursor: pointer
+	transform: scale(1.2)
+a:active
+	color: $blue
+	cursor: pointer
 li
 	list-style-type: none
 .navigation__menu
+	margin-left: 15vw
 	.navigation__menu-list
 		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
-		max-width: 50vw
-		gap: 5vw
+		max-width: 40vw
+		gap: 4vw
 		margin-right: 100px
 		padding: 20px
 .main__section
@@ -56,8 +64,9 @@ li
 		background-image: url("../assets/img/photo.png")
 		background-repeat: no-repeat
 		background-size: contain
-		height: 530px
-		margin: 0px 10px 10px 55px
+		height: 550px
+		max-width: 100%
+		margin: 0px 0px 10px 55px
 		top: 10px
 	&-about
 		width: 60vw
@@ -66,7 +75,7 @@ li
 	align-items: center
 	justify-content: flex-start
 	padding-left: 100px
-	max-width: 430px
+	max-width: 100%
 	height: 50px
 	color: $blue
 	font-weight: 700
@@ -85,7 +94,7 @@ li
 	align-items: center
 	flex-wrap: wrap
 	max-width: 330px
-	margin-left: 100px
+	margin-left: 55px
 .about__info
 	display: flex
 	flex-direction: column
@@ -99,6 +108,8 @@ li
 		line-height: 70px
 		text-transform: uppercase
 		text-align: center
+		margin-block-end: 0
+		margin-block-start: 0
 	&-profile
 		color: $white
 		font-weight: 600
@@ -106,6 +117,8 @@ li
 		line-height: 58px
 		text-align: center
 		letter-spacing: 0.05em
+		margin-block-end: 0
+		margin-block-start: 0
 		padding: 14px 0 54px 0
 	&-download
 		display: flex
@@ -137,3 +150,89 @@ li
 	align-items: flex-start
 	padding: 27px 0 10px 100px
 	max-width: 430px
+.about__me
+	&-text
+		font-weight: 400
+		font-size: 24px
+		line-height: 35px
+		color: $white
+		max-width: 720px
+		margin-left: 61px
+		padding: 40px 0
+.about__title
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	padding-left: 60px
+	max-width: 100%
+	height: 50px
+	color: $blue
+	font-weight: 700
+	font-size: 34px
+	line-height: 41px
+	background-color: rgba(213, 212, 214, 0.2)
+	&-stripe
+		display: inline-block
+		height: 50px
+		width: 30px
+		background-color: $blue
+		margin-left: 10px
+
+.education__title
+	display: flex
+	align-items: center
+	justify-content: center
+	padding-left: 80px
+	max-width: 100%
+	height: 50px
+	color: $blue
+	font-weight: 700
+	font-size: 34px
+	line-height: 41px
+	background-color: rgba(213, 212, 214, 0.2)
+	&-stripe
+		display: inline-block
+		height: 50px
+		width: 30px
+		background-color: $blue
+		margin-left: 10px
+.education
+	background-color: $black
+	&__block
+		&-info
+			color: $white
+			padding-top: 40px
+			padding-bottom: 40px
+			margin-left: 100px
+		&-university
+			font-weight: 700
+			font-size: 24px
+			line-height: 29px
+		&-facult
+			padding-top: 20px
+			font-weight: 300
+			font-size: 20px
+			line-height: 24px
+		&-years
+			padding-top: 20px
+			font-weight: 300
+			font-size: 20px
+			line-height: 24px
+		&-special
+			padding-top: 20px
+			font-weight: 300
+			font-size: 24px
+			line-height: 29px
+.courses
+	background-color: $black
+	&__block
+		&-lists
+			display: flex
+			justify-content: space-around
+		&-list
+			max-width: 380px
+		&-course
+			font-weight: 600
+			font-size: 20px
+			line-height: 24px
+			max-width: 300px

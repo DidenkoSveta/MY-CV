@@ -42,10 +42,26 @@ a {
   white-space: nowrap;
 }
 
+a:hover {
+  color: #41C1EF;
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+a:active {
+  color: #41C1EF;
+  cursor: pointer;
+}
+
 li {
   list-style-type: none;
 }
 
+.navigation__menu {
+  margin-left: 15vw;
+}
 .navigation__menu .navigation__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,8 +71,8 @@ li {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 50vw;
-  gap: 5vw;
+  max-width: 40vw;
+  gap: 4vw;
   margin-right: 100px;
   padding: 20px;
 }
@@ -83,8 +99,9 @@ li {
   background-image: url("../assets/img/photo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 530px;
-  margin: 0px 10px 10px 55px;
+  height: 550px;
+  max-width: 100%;
+  margin: 0px 0px 10px 55px;
   top: 10px;
 }
 .main__section-about {
@@ -102,7 +119,7 @@ li {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 100px;
-  max-width: 430px;
+  max-width: 100%;
   height: 50px;
   color: #41C1EF;
   font-weight: 700;
@@ -131,7 +148,7 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 330px;
-  margin-left: 100px;
+  margin-left: 55px;
 }
 
 .about__info {
@@ -156,6 +173,10 @@ li {
   line-height: 70px;
   text-transform: uppercase;
   text-align: center;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
 }
 .about__info-profile {
   color: #D5D4D6;
@@ -164,6 +185,10 @@ li {
   line-height: 58px;
   text-align: center;
   letter-spacing: 0.05em;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
   padding: 14px 0 54px 0;
 }
 .about__info-download {
@@ -215,4 +240,121 @@ li {
           align-items: flex-start;
   padding: 27px 0 10px 100px;
   max-width: 430px;
+}
+
+.about__me-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #D5D4D6;
+  max-width: 720px;
+  margin-left: 61px;
+  padding: 40px 0;
+}
+
+.about__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 60px;
+  max-width: 100%;
+  height: 50px;
+  color: #41C1EF;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  background-color: rgba(213, 212, 214, 0.2);
+}
+.about__title-stripe {
+  display: inline-block;
+  height: 50px;
+  width: 30px;
+  background-color: #41C1EF;
+  margin-left: 10px;
+}
+
+.education__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 80px;
+  max-width: 100%;
+  height: 50px;
+  color: #41C1EF;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  background-color: rgba(213, 212, 214, 0.2);
+}
+.education__title-stripe {
+  display: inline-block;
+  height: 50px;
+  width: 30px;
+  background-color: #41C1EF;
+  margin-left: 10px;
+}
+
+.education {
+  background-color: #2D2D2D;
+}
+.education__block-info {
+  color: #D5D4D6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 100px;
+}
+.education__block-university {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.education__block-facult {
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+.education__block-years {
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+.education__block-special {
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.courses {
+  background-color: #2D2D2D;
+}
+.courses__block-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.courses__block-list {
+  max-width: 380px;
+}
+.courses__block-course {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 300px;
 }/*# sourceMappingURL=style.css.map */

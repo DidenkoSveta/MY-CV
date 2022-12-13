@@ -4,8 +4,8 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, user-scalable=no">
-   <link rel="icon" href="assets/svg/logo-white.svg">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="assets/svg/logo.svg">
    <title>Didenko Svetlana</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +17,14 @@
 <body>
    <header>
       <div class="navigation__menu">
-         <nav class="navigation__menu-list">
-            <li class="navigation__menu-link"><a href="#">About Me</a></li>
-            <li class="navigation__menu-link"><a href="#">Skills</a></li>
-            <li class="navigation__menu-link"><a href="#">Strengths</a></li>
-            <li class="navigation__menu-link"><a href="#">Education</a></li>
-            <li class="navigation__menu-link"><a href="#">Projects</a></li>
+         <nav>
+            <ul class="navigation__menu-list">
+               <li class="navigation__menu-link"><a href="#">About Me</a></li>
+               <li class="navigation__menu-link"><a href="#">Skills</a></li>
+               <li class="navigation__menu-link"><a href="#">Strengths</a></li>
+               <li class="navigation__menu-link"><a href="#">Education</a></li>
+               <li class="navigation__menu-link"><a href="#">Projects</a></li>
+            </ul>
          </nav>
       </div>
    </header>
@@ -30,7 +32,7 @@
       <section class="main__section">
          <div class="main__section-contacts">
             <div class="main__section-img"></div>
-            <div class="contacts__title">contacts()
+            <div class="contacts__title">contacts( )
                <div class="contacts__title-stripe"></div>
             </div>
             <div class="contacts__lists">
@@ -39,29 +41,82 @@
                <div class="contacts__list contacts__list-adress">Adress: &nbsp;<span>Armenia. Erevan city</span></div>
             </div>
             <div class="contacts__links">
-               <nav class="navigation__main-list">
-                  <li class="navigation__menu-link"><a href="#"><img src="assets/svg/telegram-link.svg"
-                           alt="telegram-link"></a></li>
-                  <li class="navigation__menu-link"><a href="#"><img src="assets/svg/linkedin-link.svg"
-                           alt="linkedin-link"></a></li>
-                  <li class="navigation__menu-link"><a href="#"><img src="assets/svg/github-link.svg"
-                           alt="github-link"></a></li>
-                  <li class="navigation__menu-link"><a href="#"><img src="assets/svg/behance-link.svg"
-                           alt="behance-link"></a></li>
-                  <li class="navigation__menu-link"><a href="#"><img src="assets/svg/whatsap-link.svg"
-                           alt="whatsap-link"></a></li>
+               <nav>
+                  <ul class="navigation__main-list">
+                     <li class="navigation__menu-link"><a href="#"><img src="assets/svg/telegram-link.svg"
+                        alt="telegram-link"></a></li>
+               <li class="navigation__menu-link"><a href="#"><img src="assets/svg/linkedin-link.svg"
+                        alt="linkedin-link"></a></li>
+               <li class="navigation__menu-link"><a href="#"><img src="assets/svg/github-link.svg"
+                        alt="github-link"></a></li>
+               <li class="navigation__menu-link"><a href="#"><img src="assets/svg/behance-link.svg"
+                        alt="behance-link"></a></li>
+               <li class="navigation__menu-link"><a href="#"><img src="assets/svg/whatsap-link.svg"
+                        alt="whatsap-link"></a></li>
+                  </ul>
                </nav>
             </div>
          </div>
          <div class="main__section-about">
             <div class="about__info">
-               <div class="about__info-name">&lt;Svetlana Didenko&gt;</div>
-               <div class="about__info-profile">Front-end developer</div>
+               <h2 class="about__info-name">&lt; Svetlana Didenko &frasl;&gt;</h2>
+               <h1 class="about__info-profile">Front-end developer</h1>
                <a class="about__info-download" href="#" download>Download CV <img src="assets/svg/download.svg"
                      alt="download"></a>
             </div>
             <div class="about__me">
-               
+               <div class="about__title">aboutMe( )
+                  <div class="about__title-stripe"></div>
+               </div>
+               <div class="about__me-text">&lt; I’m frontend developer &frasl;&gt;<br><br>At the moment I live in
+                  Armenia, and I am ready to move. My goal is to learn everything new and exciting.<br><br>
+
+                  I can (like) to spend a lot of time on what interests me. I am able to study independently and am not
+                  afraid to put my knowledge into practice.<br><br>
+
+                  Now I am gaining knowledge and skills that will be enough for employment in the company. </div>
+            </div>
+         </div>
+      </section>
+      <section class="education">
+         <div class="education__block">
+            <div class="education__title">myEducation( )
+               <div class="education__title-stripe"></div>
+            </div>
+            <div class="education__block-info">
+               <h5 class="education__block-university">Siberian State University of Telecommunications and Informatics
+               </h5>
+               <div class="education__block-facult">Informaton Technology Faculty</div>
+               <div class="education__block-years">Years: 2008 - 2014</div>
+               <div class="education__block-special">Computer hardware and automated systems software</div>
+            </div>
+         </div>
+      </section>
+      <section class="courses">
+         <div class="courses__block">
+            <div class="education__title">myCourses( )
+               <div class="education__title-stripe"></div>
+            </div>
+            <div class="courses__block-lists">
+               <div class="courses__block-list">
+                  <h6 class="courses__block-course"><a href="#"><img src="assets/svg/udemy-icon.svg"
+                           alt="course-icon">Udemy. Basic course of Java Script</a></h6>
+                  <h6 class="courses__block-course"><a href="#"><img src="assets/svg/rs-icon.svg" alt="course-icon">RS
+                        School Front-End stage#1</a></h6>
+               </div>
+               <div class="courses__block-list">
+                  <h6 class="courses__block-course"><a href="#"><img src="assets/svg/udemy-icon.svg"
+                           alt="course-icon">Udemy. React - Full Course on React</a></h6>
+                  <h6 class="courses__block-course"><a href="#"><img src="assets/svg/udemy-icon.svg"
+                           alt="course-icon">Udemy. Modern JavaScript - from Scratch to Junior Specialist</a></h6>
+               </div>
+               <div class="courses__block-list">
+                  <h6 class="courses__block-course"><a href="#"><img src="assets/svg/udemy-icon.svg"
+                           alt="course-icon">Udemy. Web design in Figma 2022 - from scratch to the result, the basics of
+                        UX UI </a></h6>
+                  <h6 class="courses__block-course"><a href="#"><img src="assets/svg/udemy-icon.svg"
+                           alt="course-icon">Udemy. Web Design in Figma. Basics of Ui Ux design in practice</a></h6>
+               </div>
             </div>
          </div>
       </section>
