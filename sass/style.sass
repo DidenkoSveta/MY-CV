@@ -1,2 +1,139 @@
+$black: #2D2D2D
+$white: #D5D4D6
+$blue: #41C1EF
+$lato: Lato, sans-serif
 body
-   background: green
+	position: relative
+	background-color: #1E1E1E
+	max-width: 1440px
+	overflow-x: hidden
+	margin: 0 auto
+	font-family: $lato
+header
+	background-color: $black
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	box-sizing: border-box
+	width: 100%
+
+a
+	color: $white
+	font-family: $lato
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 22px
+	display: flex
+	align-items: center
+	text-align: center
+	letter-spacing: 0.05em
+	text-decoration: none
+	white-space: nowrap
+li
+	list-style-type: none
+.navigation__menu
+	.navigation__menu-list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		max-width: 50vw
+		gap: 5vw
+		margin-right: 100px
+		padding: 20px
+.main__section
+	width: 100%
+	display: flex
+	justify-content: space-evenly
+	background-color: $black
+	margin: 0
+	&-contacts
+		width: 40vw
+		box-sizing: border-box
+		color: $white
+	&-img
+		position: relative
+		background-image: url("../assets/img/photo.png")
+		background-repeat: no-repeat
+		background-size: contain
+		height: 530px
+		margin: 0px 10px 10px 55px
+		top: 10px
+	&-about
+		width: 60vw
+.contacts__title
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	padding-left: 100px
+	max-width: 430px
+	height: 50px
+	color: $blue
+	font-weight: 700
+	font-size: 34px
+	line-height: 41px
+	background-color: rgba(213, 212, 214, 0.2)
+	&-stripe
+		display: inline-block
+		height: 50px
+		width: 30px
+		background-color: $blue
+		margin-left: 10px
+.navigation__main-list
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap
+	max-width: 330px
+	margin-left: 100px
+.about__info
+	display: flex
+	flex-direction: column
+	align-items: center
+	flex-wrap: wrap
+	margin: 100px 0 60px 0
+	&-name
+		color: $blue
+		font-weight: 700
+		font-size: 58px
+		line-height: 70px
+		text-transform: uppercase
+		text-align: center
+	&-profile
+		color: $white
+		font-weight: 600
+		font-size: 48px
+		line-height: 58px
+		text-align: center
+		letter-spacing: 0.05em
+		padding: 14px 0 54px 0
+	&-download
+		display: flex
+		color: $blue
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+		border: 2px solid #41C1EF
+		width: 190px
+		height: 50px
+		justify-content: center
+		align-items: center
+.contacts__list
+	font-weight: 300
+	font-size: 22px
+	line-height: 26px
+	text-align: left
+	padding: 17px 0
+	max-width: 430px
+	span
+		font-weight: 600
+		font-size: 22px
+		line-height: 26px
+		letter-spacing: 0.03em
+.contacts__lists
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: flex-start
+	padding: 27px 0 10px 100px
+	max-width: 430px
