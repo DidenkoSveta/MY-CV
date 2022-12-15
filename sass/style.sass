@@ -29,7 +29,7 @@ a
 	text-align: center
 	letter-spacing: 0.05em
 	text-decoration: none
-	white-space: nowrap
+	// white-space: nowrap
 a:hover
 	color: $blue
 	cursor: pointer
@@ -39,6 +39,13 @@ a:active
 	cursor: pointer
 li
 	list-style-type: none
+main
+	background-color: $black
+h4
+	color: $black
+	font-size: 1px
+	padding: 0!important
+	margin: 0!important
 .navigation__menu
 	margin-left: 15vw
 	.navigation__menu-list
@@ -49,6 +56,9 @@ li
 		gap: 4vw
 		margin-right: 100px
 		padding: 20px
+		li
+			a
+				white-space: nowrap
 .main__section
 	width: 100%
 	display: flex
@@ -157,7 +167,7 @@ li
 		line-height: 35px
 		color: $white
 		max-width: 720px
-		margin-left: 61px
+		margin: 0px 100px 0px 61px
 		padding: 40px 0
 .about__title
 	display: flex
@@ -226,13 +236,130 @@ li
 .courses
 	background-color: $black
 	&__block
+		max-width: 1440px
 		&-lists
 			display: flex
-			justify-content: space-around
+			justify-content: space-between
+			flex-wrap: wrap
+			align-items: flex-start
+			margin: 60px 100px 0 100px
+			padding-bottom: 60px
+			h6
+				display: flex
+				align-items: flex-start
+				min-height: 2vh
+				width: 20vw
 		&-list
 			max-width: 380px
 		&-course
+			padding: 0 10px
+			a
+				text-align: left
+				align-items: flex-start
+				font-size: 20px
+				font-weight: 400
+				line-height: 24px
+				img
+					padding-right: 10px
+.block__bar-lists
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin: 50px 100px 10px 100px
+.skills__block
+	&-line
+		color: $blue
+		background: $blue
+		height: 2px
+		max-width: 1240px
+		margin: 0 100px
+	&-lists
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+		color: $white
+		margin: 60px 100px
+		gap: 30px
+		li
+			display: flex
+			align-items: center
+			flex-direction: row
+			width: 293px
+			white-space: nowrap
+			img
+				padding-right: 10px
+.lang__block
+	&-lists
+		display: flex
+		gap: 150px
+		margin: 60px 100px
+		h6
 			font-weight: 600
-			font-size: 20px
-			line-height: 24px
-			max-width: 300px
+			font-size: 22px
+			line-height: 26px
+			color: $white
+			width: 320px
+			margin: 0px
+			img
+				padding-right: 10px
+.project
+	background-color: $black
+	&__block
+		&-text
+			font-weight: 400
+			font-size: 22px
+			line-height: 22px
+			color: $white
+		&-img
+			max-height: 218px
+		&-grid
+			display: flex
+			flex-wrap: wrap
+			margin: 60px 100px
+			gap: 50px
+		&-card
+			max-width: 380px
+		&-tools
+			display: flex
+			align-items: center
+			flex-wrap: nowrap
+			gap: 10px
+		&-info
+			display: flex
+		&-name
+			display: flex
+			flex-direction: column
+			justify-content: center
+.project-line
+	height: 0.5px
+	max-width: 180px
+	background-color: $white
+	margin-top: 10px
+.footer-line
+	background-color: $white
+	height: 1px
+	max-width: 1440px
+.footer__block
+	margin-bottom: -6vh
+	nav 
+		display: grid
+		justify-items: center
+	&-links
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: nowrap
+		width: 360px
+		li
+			font-weight: 400
+			font-size: 18px
+			line-height: 22px
+			letter-spacing: 0.05em
+			text-decoration-line: underline
+			color: $white
+			padding-bottom: 130px
+			margin-top: 35px
