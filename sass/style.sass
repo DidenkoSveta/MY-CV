@@ -9,6 +9,13 @@ body
 	overflow-x: hidden
 	margin: 0 auto
 	font-family: $lato
+	@media (max-width: 1440px)
+		max-width: 1220px
+	@media (max-width: 1219px)
+		max-width: 1024px
+	@media (max-width: 1024px)
+		max-width: 1024px
+		margin: 0 50px
 header
 	background-color: $black
 	display: flex
@@ -29,7 +36,6 @@ a
 	text-align: center
 	letter-spacing: 0.05em
 	text-decoration: none
-	// white-space: nowrap
 a:hover
 	color: $blue
 	cursor: pointer
@@ -46,25 +52,42 @@ h4
 	font-size: 1px
 	padding: 0!important
 	margin: 0!important
+.burger__menu
+	display: none
+	@media (max-width: 1024px)
+		display: block
+		margin-right: 20px
+		margin-top: 20px
 .navigation__menu
 	margin-left: 15vw
+	@media (max-width: 1024px)
+		display: none
 	.navigation__menu-list
 		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
-		max-width: 40vw
-		gap: 4vw
+		max-width: 45vw
+		min-width: 466px
+		gap: 3vw
 		margin-right: 100px
 		padding: 20px
+		@media (max-width: 1440px)
+			gap: 2vw
+		@media (max-width: 1220px)
+			margin-right: 80px
 		li
 			a
 				white-space: nowrap
+				@media (max-width: 1220px)
+					font-size: 16px
 .main__section
 	width: 100%
 	display: flex
 	justify-content: space-evenly
 	background-color: $black
 	margin: 0
+	@media (max-width: 1024px)
+		display: flex
 	&-contacts
 		width: 40vw
 		box-sizing: border-box
@@ -78,6 +101,15 @@ h4
 		max-width: 100%
 		margin: 0px 0px 10px 55px
 		top: 10px
+		@media (max-width: 1440px)
+			height: 456px
+			margin: 0px 0px 10px 85px
+		@media (max-width: 1220px)
+			height: 344px
+			margin: 0px 0px 10px 80px
+		@media (max-width: 1024px)
+			height: 270px
+			margin: 0px 0px 10px 50px
 	&-about
 		width: 60vw
 .contacts__title
@@ -92,12 +124,34 @@ h4
 	font-size: 34px
 	line-height: 41px
 	background-color: rgba(213, 212, 214, 0.2)
+	@media (max-width: 1440px)
+		font-size: 32px
+		line-height: 38px
+		height: 45px
+	@media (max-width: 1220px)
+		font-size: 28px
+		line-height: 34px
+		height: 40px
+		padding-left: 80px
+	@media (max-width: 1024px)
+		font-size: 24px
+		line-height: 29px
+		height: 35px
+		padding-left: 50px
 	&-stripe
 		display: inline-block
 		height: 50px
 		width: 30px
 		background-color: $blue
 		margin-left: 10px
+		@media (max-width: 1440px)
+			height: 45px
+		@media (max-width: 1220px)
+			height: 40px
+			width: 26px
+		@media (max-width: 1024px)
+			height: 35px
+			width: 16px
 .navigation__main-list
 	display: flex
 	justify-content: space-between
@@ -105,12 +159,32 @@ h4
 	flex-wrap: wrap
 	max-width: 330px
 	margin-left: 55px
+	@media (max-width: 1220px)
+		max-width: 280px
+		margin-left: 40px
+	@media (max-width: 1024px)
+		max-width: 280px
+		margin-left: 50px
+		padding: 0
+	li
+		a
+			img
+				@media (max-width: 1220px)
+					height: 35px
 .about__info
 	display: flex
 	flex-direction: column
 	align-items: center
 	flex-wrap: wrap
-	margin: 100px 0 60px 0
+	margin: 80px 0px 100px 0px
+	@media (max-width: 1220px)
+		margin: 40px 80px 40px 40px
+	@media (max-width: 1024px)
+		margin: 10px 50px 40px 8px
+		h1
+			padding-bottom: 30px
+			@media (max-width: 1024px)
+				padding-bottom: 25px
 	&-name
 		color: $blue
 		font-weight: 700
@@ -120,6 +194,16 @@ h4
 		text-align: center
 		margin-block-end: 0
 		margin-block-start: 0
+		@media (max-width: 1440px)
+			font-size: 48px
+			line-height: 58px
+		@media (max-width: 1220px)
+			font-size: 36px
+			line-height: 43px
+		@media (max-width: 1024px)
+			font-size: 30px
+			line-height: 38px
+			letter-spacing: 0.01em
 	&-profile
 		color: $white
 		font-weight: 600
@@ -130,6 +214,17 @@ h4
 		margin-block-end: 0
 		margin-block-start: 0
 		padding: 14px 0 54px 0
+		@media (max-width: 1440px)
+			font-size: 40px
+			line-height: 48px
+		@media (max-width: 1220px)
+			font-size: 36px
+			line-height: 43px
+		@media (max-width: 1024px)
+			font-size: 30px
+			line-height: 38px
+			letter-spacing: 0.01em
+			padding: 8px 0px 20px 0px
 	&-download
 		display: flex
 		color: $blue
@@ -141,6 +236,11 @@ h4
 		height: 50px
 		justify-content: center
 		align-items: center
+		@media (max-width: 1440px)
+			font-size: 18px
+			line-height: 22px
+			width: 171px
+			height: 45px
 .contacts__list
 	font-weight: 300
 	font-size: 22px
@@ -148,11 +248,25 @@ h4
 	text-align: left
 	padding: 17px 0
 	max-width: 430px
+	@media (max-width: 1220px)
+		font-size: 18px
+		line-height: 22px
+		padding: 12px 0
+	@media (max-width: 1024px)
+		font-size: 16px
+		line-height: 19px
 	span
 		font-weight: 600
 		font-size: 22px
 		line-height: 26px
 		letter-spacing: 0.03em
+		@media (max-width: 1220px)
+			font-size: 18px
+			line-height: 22px
+			letter-spacing: 0.02em
+		@media (max-width: 1024px)
+			font-size: 16px
+			line-height: 19px
 .contacts__lists
 	display: flex
 	flex-wrap: wrap
@@ -160,15 +274,29 @@ h4
 	align-items: flex-start
 	padding: 27px 0 10px 100px
 	max-width: 430px
+	@media (max-width: 1220px)
+		padding: 20px 0 1px 80px
+	@media (max-width: 1024px)
+		padding: 20px 0 1px 50px
 .about__me
 	&-text
-		font-weight: 400
+		font-weight: 300
 		font-size: 24px
 		line-height: 35px
 		color: $white
 		max-width: 720px
 		margin: 0px 100px 0px 61px
 		padding: 40px 0
+		@media (max-width: 1440px)
+			font-size: 22px
+			line-height: 30px
+			margin: 0px 100px 0px 43px
+			padding: 30px 0
+		@media (max-width: 1220px)
+			font-size: 18px
+			line-height: 25px
+			margin: 0px 80px 0px 43px
+			padding: 30px 0
 .about__title
 	display: flex
 	align-items: center
@@ -181,13 +309,34 @@ h4
 	font-size: 34px
 	line-height: 41px
 	background-color: rgba(213, 212, 214, 0.2)
+	@media (max-width: 1440px)
+		font-size: 32px
+		line-height: 38px
+		height: 45px
+	@media (max-width: 1220px)
+		font-size: 28px
+		line-height: 34px
+		height: 40px
+		padding-left: 40px
+	@media (max-width: 1024px)
+		font-size: 24px
+		line-height: 29px
+		height: 35px
+		padding-left: 50px
 	&-stripe
 		display: inline-block
 		height: 50px
 		width: 30px
 		background-color: $blue
 		margin-left: 10px
-
+		@media (max-width: 1440px)
+			height: 45px
+		@media (max-width: 1220px)
+			height: 40px
+			width: 26px
+		@media (max-width: 1024px)
+			height: 35px
+			width: 16px
 .education__title
 	display: flex
 	align-items: center
@@ -200,43 +349,92 @@ h4
 	font-size: 34px
 	line-height: 41px
 	background-color: rgba(213, 212, 214, 0.2)
+	@media (max-width: 1440px)
+		font-size: 32px
+		line-height: 38px
+		height: 45px
+	@media (max-width: 1220px)
+		font-size: 28px
+		line-height: 34px
+		height: 40px
+		padding-left: 80px
+	@media (max-width: 1024px)
+		font-size: 24px
+		line-height: 29px
+		height: 35px
+		padding-left: 50px
 	&-stripe
 		display: inline-block
 		height: 50px
 		width: 30px
 		background-color: $blue
 		margin-left: 10px
+		@media (max-width: 1440px)
+			height: 45px
+		@media (max-width: 1220px)
+			height: 40px
+			width: 26px
+		@media (max-width: 1024px)
+			height: 35px
+			width: 16px
 .education
 	background-color: $black
 	&__block
 		&-info
 			color: $white
-			padding-top: 40px
-			padding-bottom: 40px
+			padding-top: 50px
+			padding-bottom: 50px
 			margin-left: 100px
+			@media (max-width: 1220px)
+				padding-top: 40px
+				padding-bottom: 40px
+				margin: 0 80px
+			h5
+				margin: 0
 		&-university
 			font-weight: 700
 			font-size: 24px
 			line-height: 29px
+			letter-spacing: 0.03em
+			@media (max-width: 1440px)
+				font-size: 22px
+				line-height: 26px
+				letter-spacing: 0.03em
 		&-facult
 			padding-top: 20px
-			font-weight: 300
+			font-weight: 200
 			font-size: 20px
 			line-height: 24px
+			letter-spacing: 0.02em
+			@media (max-width: 1440px)
+				padding-top: 16px
 		&-years
 			padding-top: 20px
-			font-weight: 300
+			font-weight: 200
 			font-size: 20px
 			line-height: 24px
+			letter-spacing: 0.02em
+			@media (max-width: 1440px)
+				padding-top: 16px
 		&-special
 			padding-top: 20px
 			font-weight: 300
 			font-size: 24px
 			line-height: 29px
+			letter-spacing: 0.02em
+			@media (max-width: 1440px)
+				padding-top: 16px
+			@media (max-width: 1220px)
+				font-size: 22px
+				line-height: 26px
 .courses
 	background-color: $black
 	&__block
 		max-width: 1440px
+		@media (max-width: 1440px)
+			max-width: 1220px
+		@media (max-width: 1220px)
+			max-width: 1024px
 		&-lists
 			display: flex
 			justify-content: space-between
@@ -244,11 +442,20 @@ h4
 			align-items: flex-start
 			margin: 60px 100px 0 100px
 			padding-bottom: 60px
+			@media (max-width: 1440px)
+				margin: 40px 100px 0 100px
+				padding-bottom: 20px
+			@media (max-width: 1220px)
+				margin: 30px 80px 0 80px
+				padding-bottom: 20px
 			h6
 				display: flex
 				align-items: flex-start
 				min-height: 2vh
 				width: 20vw
+				@media (max-width: 1220px)
+					width: 25vw
+					min-height: 1vh
 		&-list
 			max-width: 380px
 		&-course
@@ -259,6 +466,8 @@ h4
 				font-size: 20px
 				font-weight: 400
 				line-height: 24px
+				@media (max-width: 1220px)
+					font-size: 16px
 				img
 					padding-right: 10px
 .block__bar-lists
@@ -266,7 +475,12 @@ h4
 	align-items: center
 	justify-content: space-between
 	margin: 50px 100px 10px 100px
+	@media (max-width: 1220px)
+		margin: 40px 80px 10px 80px
 .skills__block
+	nav
+		ul
+			padding: 0
 	&-line
 		color: $blue
 		background: $blue
@@ -284,19 +498,34 @@ h4
 		color: $white
 		margin: 60px 100px
 		gap: 30px
+		@media (max-width: 1440px)
+			margin: 50px 100px
+			gap: 40px
+		@media (max-width: 1220px)
+			margin: 40px 80px
+			column-gap: 150px
+			font-size: 18px
 		li
 			display: flex
 			align-items: center
 			flex-direction: row
 			width: 293px
 			white-space: nowrap
+			@media (max-width: 1220px)
+				width: 12vw
 			img
 				padding-right: 10px
+				@media (max-width: 1220px)
 .lang__block
 	&-lists
 		display: flex
 		gap: 150px
 		margin: 60px 100px
+		@media (max-width: 1440px)
+			margin: 50px 100px
+		@media (max-width: 1220px)
+			margin: 40px 80px
+			gap: 40px
 		h6
 			font-weight: 600
 			font-size: 22px
@@ -304,8 +533,16 @@ h4
 			color: $white
 			width: 320px
 			margin: 0px
+			@media (max-width: 1440px)
+				font-size: 20px
+			@media (max-width: 1220px)
+				font-size: 18px
 			img
 				padding-right: 10px
+.strength__block
+	nav
+		ul
+			padding: 0
 .project
 	background-color: $black
 	&__block
@@ -314,20 +551,51 @@ h4
 			font-size: 22px
 			line-height: 22px
 			color: $white
+			@media (max-width: 1440px)
+				font-size: 20px
+			@media (max-width: 1220px)
+				font-size: 18px
 		&-img
 			max-height: 218px
+			@media (max-width: 1440px)
+				max-height: 180px
+			@media (max-width: 1220px)
+				max-height: 155px
 		&-grid
 			display: flex
 			flex-wrap: wrap
+			justify-content: space-between
 			margin: 60px 100px
-			gap: 50px
+			@media (max-width: 1440px)
+				margin: 50px 100px 40px 100px
+			@media (max-width: 1220px)
+				margin: 40px 80px 5px 80px
 		&-card
 			max-width: 380px
+			height: 100%
+			@media (max-width: 1440px)
+				display: flex
+				flex-direction: column
+				align-items: center
+			@media (max-width: 1220px)
+				margin-bottom: 30px
 		&-tools
 			display: flex
 			align-items: center
 			flex-wrap: nowrap
 			gap: 10px
+			@media (max-width: 1440px)
+				gap: 10px
+			@media (max-width: 1220px)
+				gap: 10px
+				padding-left: 30px
+				margin: 10px 0
+			li
+				img
+					@media (max-width: 1440px)
+						max-height: 30px
+					@media (max-width: 1220px)
+						max-height: 26px
 		&-info
 			display: flex
 		&-name
@@ -342,10 +610,13 @@ h4
 .footer-line
 	background-color: $white
 	height: 1px
-	max-width: 1440px
+	max-width: 100%
+	margin: 0 100px
+	@media (max-width: 1220px)
+		margin: 0 80px
 .footer__block
 	margin-bottom: -6vh
-	nav 
+	nav
 		display: grid
 		justify-items: center
 	&-links
@@ -362,4 +633,10 @@ h4
 			text-decoration-line: underline
 			color: $white
 			padding-bottom: 130px
-			margin-top: 35px
+			margin-top: 50px
+			@media (min-width: 1440px)
+				margin-top: 40px
+				padding-bottom: 110px
+			@media (min-width: 1220px)
+				margin-top: 40px
+				padding-bottom: 80px
