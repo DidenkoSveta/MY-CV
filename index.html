@@ -16,9 +16,11 @@
 
 <body>
    <header>
-      <div class="burger__menu"><img src="assets/svg/burger-menu.svg" alt="" class="burger__menu-img"></div>
+      <button class=" burger burger__menu"><img src="assets/svg/burger-menu.svg" alt="close" class="burger__menu-img"></button>
       <div class="navigation__menu">
-         <nav>
+         <!-- <button type="button" class="burger burger__menu"><img src="assets/svg/burger-menu.svg" alt="menu" class="burger__menu-img"></button> -->
+         <nav class="navigation__header">
+            <button type="button" class="close header__close"><img src="assets/svg/close.svg" alt="close" class="close__menu-img"></button>
             <ul class="navigation__menu-list">
                <li class="navigation__menu-link"><a href="#about__me">About Me</a></li>
                <li class="navigation__menu-link"><a href="#my__skills">Skills</a></li>
@@ -30,6 +32,62 @@
       </div>
    </header>
    <main>
+      <section class="main__mobile">
+         <div class="main__mobile-contacts">
+            <div class="contacts__block-img">
+               <div class="main__mobile-img"></div>
+               <div class="about__info">
+                  <h2 class="about__info-name">&lt; Svetlana Didenko &frasl;&gt;</h2>
+                  <h1 class="about__info-profile">Front-end developer</h1>
+                  <a class="about__info-download" href="#" download>Download CV <img src="assets/svg/download.svg"
+                        alt="download"></a>
+               </div>
+            </div>
+            <div class="contacts__title">contacts( )
+               <div class="contacts__title-stripe"></div>
+            </div>
+            <div class="main__mobile-group">
+               <div class="mobile__lists">
+                  <a class=" contacts__list contacts__list-email" href="mailto:garpia.lana@gmail.com">Email:
+                     &nbsp;<span>garpia.lana@gmail.com</span></a>
+                  <div class="contacts__list contacts__list-tel">Tel: &nbsp;<span>+3(749)118 35 45</span></div>
+                  <div class="contacts__list contacts__list-adress">Adress: &nbsp;<span>Armenia. Erevan city</span>
+                  </div>
+               </div>
+               <div class="contacts__links">
+                  <nav>
+                     <ul class="navigation__mobile-list">
+                        <li class="navigation__menu-link"><a href="https://t.me/garpia_lana"><img
+                                 src="assets/svg/telegram-link.svg" alt="telegram-link"></a></li>
+                        <li class="navigation__menu-link"><a
+                              href="https://www.linkedin.com/in/svetlana-didenko-36b392255/"><img
+                                 src="assets/svg/linkedin-link.svg" alt="linkedin-link"></a></li>
+                        <li class="navigation__menu-link"><a href="https://github.com/DidenkoSveta"><img
+                                 src="assets/svg/github-link.svg" alt="github-link"></a></li>
+                        <li class="navigation__menu-link"><a href="https://www.behance.net/lanadidenko"><img
+                                 src="assets/svg/behance-link.svg" alt="behance-link"></a></li>
+                        <li class="navigation__menu-link"><a href="https://wa.me/+79143127270"><img
+                                 src="assets/svg/whatsap-link.svg" alt="whatsap-link"></a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <div class="main__mobile-about" id="about__me-mobile">
+            <div class="about__me">
+               <div class="about__title">aboutMe( )
+                  <div class="about__title-stripe"></div>
+               </div>
+               <div class="about__me-text">&lt; I’m frontend developer &frasl;&gt;<br><br>At the moment I live in
+                  Armenia, and I am ready to move. My goal is to learn everything new and exciting.<br><br>
+
+                  I can (like) to spend a lot of time on what interests me. I am able to study independently and am not
+                  afraid to put my knowledge into practice.<br><br>
+
+                  Now I am gaining knowledge and skills that will be enough for employment in the company. </div>
+            </div>
+         </div>
+      </section>
       <section class="main__section">
          <div class="main__section-contacts">
             <div class="main__section-img"></div>
@@ -301,15 +359,16 @@
             <div class="footer-line"></div>
             <nav>
                <ul class="footer__block-links">
-                  <li class="footer__block-link">GitHub</li>
-                  <li class="footer__block-link">Linkedin</li>
-                  <li class="footer__block-link">Behance</li>
+                  <li class="footer__block-link"><a href="https://github.com/DidenkoSveta">GitHub</a></li>
+                  <li class="footer__block-link"><a href="https://www.linkedin.com/in/svetlana-didenko-36b392255/">Linkedin</a></li>
+                  <li class="footer__block-link"><a href="https://www.behance.net/lanadidenko">Behance</a></li>
                </ul>
             </nav>
          </div>
       </footer>
 
    </main>
+   <script src="js/burger.js"></script>
 </body>
 
 </html>
